@@ -1,23 +1,124 @@
-<!doctype html>  <!-- index.html -->
-<html><head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-sacle=1"/>
-  <title>개인 과제 리스트</title>
-  <style>
-  a:link {color:blue; text-decoration:none;} a:visited { color:purple; text-decoration:none;}
-  a:hover { text-decoration:underline;} a:active {color:red; text-decoration:none;}
-  </style></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>power7092.github.io</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>000 과제 리스트</h3>
-  <ul><hr/>
-  <li> 1주 1회차 </li>
-  <ol>
-    <li><a href=https://power7092.github.io/java/hw1_1_1.html>Eclipse 초기 실행(hw1_1_1.html)</a></li>
-  </ol><hr/>
-  <li> 1주 2회차 </li>
-  <ol>
-  <li><a href="https://power7092.github.io/java/hw1_2_1.html">변학도실습 desktop/moblie용(hw1_2_1.html)</a></li>
-  <li><a href="https://power7092.github.io/java/hw1_2_2.html">변학도실습 desktop용(hw1_2_2.html)</a></li>
-  </ol><hr/>
-  </ul>
-</body></html>
+  <div class="page-glow page-glow-left"></div>
+  <div class="page-glow page-glow-right"></div>
+
+  <main class="site-shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">GITHUB PAGES + GITHUB LOGIN</p>
+        <h1 id="siteTitle">power7092.github.io</h1>
+        <p class="hero-description">
+          Personal GitHub Pages site template with GitHub profile sync, GitHub login,
+          public repository cards, and an Omok game in one page.
+        </p>
+
+        <div class="hero-meta">
+          <a id="profileLink" class="pill-link" href="https://github.com/power7092" target="_blank" rel="noreferrer">
+            GitHub Profile
+          </a>
+          <a id="siteLink" class="pill-link" href="https://power7092.github.io" target="_blank" rel="noreferrer">
+            Site URL
+          </a>
+        </div>
+
+        <div class="hint-card">
+          <p class="hint-label">Repo / Folder Name</p>
+          <p id="repoHint" class="hint-value">power7092.github.io</p>
+        </div>
+
+        <div id="configWarning" class="warning-card" hidden>
+          Add your Supabase public values in `site-config.js` to enable GitHub login.
+        </div>
+      </div>
+
+      <aside class="auth-panel">
+        <p class="panel-label">GitHub Login</p>
+        <p id="authStatus" class="auth-status">
+          Public GitHub profile data is shown by default.
+        </p>
+
+        <div class="auth-actions">
+          <button id="loginButton" type="button">Login with GitHub</button>
+          <button id="logoutButton" type="button" class="ghost-button" hidden>Logout</button>
+        </div>
+
+        <article id="profileCard" class="profile-card">
+          <img id="profileAvatar" class="profile-avatar" alt="GitHub avatar">
+          <div class="profile-copy">
+            <p id="profileName" class="profile-name">GitHub User</p>
+            <p id="profileUsername" class="profile-username">@power7092</p>
+            <p id="profileBio" class="profile-bio">
+              Signed-in account details or public profile details appear here.
+            </p>
+          </div>
+        </article>
+      </aside>
+    </section>
+
+    <section class="content-grid">
+      <article class="content-card">
+        <p class="panel-label">Recent Repositories</p>
+        <div id="repoList" class="repo-list">
+          <p class="empty-state">Loading GitHub repositories...</p>
+        </div>
+      </article>
+
+      <article class="content-card">
+        <p class="panel-label">Deploy Checklist</p>
+        <ol class="check-list">
+          <li>Use `power7092.github.io` as both the local folder name and repository name.</li>
+          <li>Keep `site-config.js` aligned with your Pages URL and GitHub username.</li>
+          <li>Enable GitHub OAuth in Supabase and paste only public keys into this project.</li>
+          <li>Push to GitHub and deploy Pages from the branch root.</li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="game-section">
+      <div class="game-copy">
+        <p class="eyebrow">BONUS GAME</p>
+        <h2>Play Omok vs AI</h2>
+        <p class="game-description">
+          Visitors can play immediately. You are black, the AI is white.
+        </p>
+
+        <div class="status-card">
+          <p class="hint-label">Game Status</p>
+          <p id="status" class="hint-value">Your turn.</p>
+        </div>
+
+        <div class="legend">
+          <div class="legend-item">
+            <span class="stone stone-black"></span>
+            <span>Player</span>
+          </div>
+          <div class="legend-item">
+            <span class="stone stone-white"></span>
+            <span>AI</span>
+          </div>
+        </div>
+
+        <button id="restartButton" type="button">New Game</button>
+      </div>
+
+      <div class="board-shell">
+        <canvas id="board" width="640" height="640" aria-label="Omok board"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script src="site-config.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
