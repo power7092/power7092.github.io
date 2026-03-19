@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="오상봉의 GitHub Pages용 개인 홈페이지입니다. 소개, 기술 스택, 프로젝트, 연락처를 한 페이지에 담았습니다.">
+  <title>오상봉 | 개인 홈페이지</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="#home">OSB</a>
+        <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="#about">소개</a>
+          <a href="#stack">기술 스택</a>
+          <a href="#projects">프로젝트</a>
+          <a href="#contact">연락처</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">GitHub Pages Portfolio</p>
+          <h1>안녕하세요, <br>꾸준히 만들고 개선하는 개발자 오상봉입니다.</h1>
+          <p class="hero-text">
+            정적 웹사이트와 인터랙티브한 브라우저 프로젝트를 만들며,
+            사용자 경험을 빠르게 구현하고 개선하는 개발을 지향합니다.
+            GitHub Pages 배포, 바닐라 JavaScript 인터랙션, 가볍고 명확한 UI 설계를 즐겨 다룹니다.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">프로젝트 보기</a>
+            <a class="button secondary" href="https://github.com/power7092" target="_blank" rel="noreferrer">GitHub 보기</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <p class="card-label">한 줄 소개</p>
+          <h2>가볍게 시작하고, 끝까지 다듬는 웹 개발을 지향합니다.</h2>
+          <ul class="highlights">
+            <li>GitHub Pages 기반 개인 사이트 구축</li>
+            <li>바닐라 JavaScript 인터랙션 구현</li>
+            <li>브라우저 게임과 작은 웹앱 제작</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">About Me</p>
+          <h2>자기소개</h2>
+        </div>
+        <div class="about-grid">
+          <article class="panel">
+            <h3>어떤 개발자인가요?</h3>
+            <p>
+              저는 아이디어를 빠르게 화면으로 옮기고, 실제 사용 흐름 안에서 자연스럽게 다듬는 과정을 좋아합니다.
+              개인 홈페이지, 브라우저 게임, 작은 웹 실험처럼 직접 보고 바로 사용할 수 있는 결과물을 꾸준히 만들고 있습니다.
+            </p>
+          </article>
+          <article class="panel">
+            <h3>무엇을 중요하게 생각하나요?</h3>
+            <p>
+              배포까지 고려한 단순한 구조, 읽기 쉬운 인터페이스, 유지보수하기 쉬운 코드를 중요하게 생각합니다.
+              특히 GitHub Pages처럼 가볍게 운영할 수 있는 환경에서 완성도 있는 경험을 만드는 데 관심이 많습니다.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Tech Stack</p>
+          <h2>기술 스택</h2>
+        </div>
+        <div class="stack-groups">
+          <div class="panel">
+            <h3>Frontend</h3>
+            <div class="chip-list">
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Responsive Web</span>
+              <span class="chip">Canvas API</span>
+            </div>
+          </div>
+          <div class="panel">
+            <h3>Tools</h3>
+            <div class="chip-list">
+              <span class="chip">Git & GitHub</span>
+              <span class="chip">GitHub Pages</span>
+              <span class="chip">GitHub API</span>
+              <span class="chip">Supabase</span>
+              <span class="chip">VS Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>프로젝트</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-tag">Project 01</div>
+            <h3>power7092.github.io</h3>
+            <p>
+              GitHub 로그인, 프로필 연동, 공개 저장소 카드, 오목 게임을 한 페이지에 담은
+              GitHub Pages 기반 개인 사이트 템플릿입니다.
+            </p>
+            <div class="project-links">
+              <a class="project-link" href="https://power7092.github.io" target="_blank" rel="noreferrer">사이트 보기</a>
+              <a class="project-link" href="https://github.com/power7092/power7092.github.io" target="_blank" rel="noreferrer">저장소 보기</a>
+            </div>
+            <div class="project-meta">GitHub Pages · JavaScript · Supabase Auth</div>
+          </article>
+          <article class="project-card">
+            <div class="project-tag">Project 02</div>
+            <h3>Neon Dodger</h3>
+            <p>
+              비를 피해 오래 생존하는 아케이드형 브라우저 게임입니다.
+              점수, 최고 기록, 속도 변화를 실시간으로 보여주고 키보드와 터치 입력을 함께 지원합니다.
+            </p>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/power7092/new-folder-2" target="_blank" rel="noreferrer">저장소 보기</a>
+            </div>
+            <div class="project-meta">HTML · CSS · JavaScript · Canvas Game</div>
+          </article>
+          <article class="project-card">
+            <div class="project-tag">Project 03</div>
+            <h3>현재 개인 홈페이지</h3>
+            <p>
+              자기소개, 기술 스택, 프로젝트, 링크를 한 페이지에서 보여주는 반응형 포트폴리오 사이트입니다.
+              GitHub Pages에 바로 배포할 수 있는 가벼운 정적 구조로 구성했습니다.
+            </p>
+            <div class="project-links">
+              <a class="project-link" href="#home">현재 페이지</a>
+              <a class="project-link" href="https://github.com/power7092" target="_blank" rel="noreferrer">GitHub 프로필</a>
+            </div>
+            <div class="project-meta">Portfolio · Static Site · Responsive Web</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>연락처</h2>
+        </div>
+        <div class="contact-panel">
+          <p>
+            새로운 프로젝트나 협업 제안은 이메일이나 GitHub를 통해 편하게 남겨주세요.
+            작업 기록과 배포 결과는 블로그/홈페이지 링크에서 바로 확인할 수 있습니다.
+          </p>
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:162538067+power7092@users.noreply.github.com">162538067+power7092@users.noreply.github.com</a>
+            <a class="contact-link" href="https://github.com/power7092" target="_blank" rel="noreferrer">github.com/power7092</a>
+            <a class="contact-link" href="https://power7092.github.io" target="_blank" rel="noreferrer">power7092.github.io</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year"></span> 오상봉. All rights reserved.</p>
+      <a href="#home">맨 위로</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
